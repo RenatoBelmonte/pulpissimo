@@ -1,0 +1,1933 @@
+[
+  {
+    "package": "tech_cells_generic",
+    "independent": false,
+    "target": "all(all(*), all(any(tech_cells_generic_include_tc_sram, all(not(asic), not(fpga))), not(tech_cells_generic_exclude_tc_sram)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "tech_cells_generic": [],
+      "common_verification": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/rtl/tc_sram.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/rtl/tc_sram_impl.sv"
+    ],
+    "dependencies": [
+      "common_verification"
+    ],
+    "version": "0.2.13"
+  },
+  {
+    "package": "tech_cells_generic",
+    "independent": false,
+    "target": "all(all(*), all(any(tech_cells_generic_include_tc_clk, all(not(asic), not(fpga))), not(tech_cells_generic_exclude_tc_clk)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "tech_cells_generic": [],
+      "common_verification": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/rtl/tc_clk.sv"
+    ],
+    "dependencies": [
+      "common_verification"
+    ],
+    "version": "0.2.13"
+  },
+  {
+    "package": "tech_cells_generic",
+    "independent": false,
+    "target": "all(all(*), all(any(tech_cells_generic_include_deprecated, not(synthesis)), not(tech_cells_generic_exclude_deprecated)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "tech_cells_generic": [],
+      "common_verification": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/deprecated/cluster_pwr_cells.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/deprecated/generic_memory.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/deprecated/generic_rom.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/deprecated/pad_functional.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/deprecated/pulp_buffer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/deprecated/pulp_pwr_cells.sv"
+    ],
+    "dependencies": [
+      "common_verification"
+    ],
+    "version": "0.2.13"
+  },
+  {
+    "package": "tech_cells_generic",
+    "independent": false,
+    "target": "all(all(*), all(any(tech_cells_generic_include_pwr_cells, not(synthesis)), not(tech_cells_generic_exclude_pwr_cells)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "tech_cells_generic": [],
+      "common_verification": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/tc_pwr.sv"
+    ],
+    "dependencies": [
+      "common_verification"
+    ],
+    "version": "0.2.13"
+  },
+  {
+    "package": "tech_cells_generic",
+    "independent": false,
+    "target": "all(*)",
+    "include_dirs": [],
+    "export_incdirs": {
+      "tech_cells_generic": [],
+      "common_verification": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/deprecated/pulp_clock_gating_async.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/deprecated/cluster_clk_cells.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tech_cells_generic-a241d08ee498172c/src/deprecated/pulp_clk_cells.sv"
+    ],
+    "dependencies": [
+      "common_verification"
+    ],
+    "version": "0.2.13"
+  },
+  {
+    "package": "common_cells",
+    "independent": false,
+    "target": "all(*)",
+    "include_dirs": [],
+    "export_incdirs": {
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "common_verification": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/binary_to_gray.sv"
+    ],
+    "dependencies": [
+      "common_verification",
+      "tech_cells_generic"
+    ],
+    "version": "1.35.0"
+  },
+  {
+    "package": "common_cells",
+    "independent": false,
+    "target": "all(all(*), not(all(vivado_ipx, xilinx)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "common_verification": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cb_filter_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cc_onehot.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cdc_reset_ctrlr_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cf_math_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/clk_int_div.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/delta_counter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/ecc_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/edge_propagator_tx.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/exp_backoff.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/fifo_v3.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/gray_to_binary.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/isochronous_4phase_handshake.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/isochronous_spill_register.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/lfsr.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/lfsr_16bit.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/lfsr_8bit.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/lossy_valid_to_stream.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/mv_filter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/onehot_to_bin.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/plru_tree.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/passthrough_stream_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/popcount.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/rr_arb_tree.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/rstgen_bypass.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/serial_deglitch.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/shift_reg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/shift_reg_gated.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/spill_register_flushable.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_demux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_filter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_fork.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_intf.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_join_dynamic.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_mux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_throttle.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/sub_per_hash.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/sync.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/sync_wedge.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/unread.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/read.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/addr_decode_dync.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cdc_2phase.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cdc_4phase.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/clk_int_div_static.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/addr_decode.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/addr_decode_napot.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/multiaddr_decode.sv"
+    ],
+    "dependencies": [
+      "common_verification",
+      "tech_cells_generic"
+    ],
+    "version": "1.35.0"
+  },
+  {
+    "package": "common_cells",
+    "independent": false,
+    "target": "all(all(*), not(all(vivado_ipx, xilinx)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "common_verification": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cb_filter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cdc_fifo_2phase.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/clk_mux_glitch_free.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/counter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/ecc_decode.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/ecc_encode.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/edge_detect.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/lzc.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/max_counter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/rstgen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/spill_register.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_delay.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_fork_dynamic.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_join.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cdc_reset_ctrlr.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cdc_fifo_gray.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/fall_through_register.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/id_queue.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_to_mem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_arbiter_flushable.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_fifo_optimal_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_register.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_xbar.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cdc_fifo_gray_clearable.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/cdc_2phase_clearable.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/mem_to_banks_detailed.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_arbiter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/stream_omega_net.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/mem_to_banks.sv"
+    ],
+    "dependencies": [
+      "common_verification",
+      "tech_cells_generic"
+    ],
+    "version": "1.35.0"
+  },
+  {
+    "package": "common_cells",
+    "independent": false,
+    "target": "all(*)",
+    "include_dirs": [],
+    "export_incdirs": {
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "common_verification": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/clock_divider_counter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/clk_div.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/find_first_one.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/generic_LFSR_8bit.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/generic_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/prioarbiter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/pulp_sync.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/pulp_sync_wedge.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/rrarbiter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/clock_divider.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/fifo_v2.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/deprecated/fifo_v1.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/edge_propagator_ack.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/edge_propagator.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/src/edge_propagator_rx.sv"
+    ],
+    "dependencies": [
+      "common_verification",
+      "tech_cells_generic"
+    ],
+    "version": "1.35.0"
+  },
+  {
+    "package": "apb",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/src/apb_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/src/apb_intf.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/src/apb_err_slv.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/src/apb_regs.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/src/apb_cdc.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/src/apb_demux.sv"
+    ],
+    "dependencies": [
+      "common_cells"
+    ],
+    "version": "0.2.4"
+  },
+  {
+    "package": "axi",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "axi": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/include"
+      ],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "common_verification": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_intf.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_atop_filter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_burst_splitter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_bus_compare.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_cdc_dst.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_cdc_src.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_cut.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_delayer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_demux_simple.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_dw_downsizer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_dw_upsizer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_id_remap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_id_prepend.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_isolate.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_join.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_demux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_dw_converter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_from_mem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_join.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_lfsr.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_mailbox.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_mux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_regs.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_to_apb.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_to_axi.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_modify_address.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_mux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_rw_join.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_rw_split.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_serializer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_slave_compare.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_throttle.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_to_detailed_mem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_cdc.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_demux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_err_slv.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_dw_converter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_from_mem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_id_serialize.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lfsr.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_multicut.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_to_axi_lite.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_to_mem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_zero_mem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_interleaved_xbar.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_iw_converter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_lite_xbar.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_xbar.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_to_mem_banked.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_to_mem_interleaved.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_to_mem_split.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/src/axi_xp.sv"
+    ],
+    "dependencies": [
+      "common_cells",
+      "common_verification",
+      "tech_cells_generic"
+    ],
+    "version": "0.39.3"
+  },
+  {
+    "package": "fpu_div_sqrt_mvp",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "fpu_div_sqrt_mvp": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpu_div_sqrt_mvp-9cbdbd8bba012c0a/hdl/defs_div_sqrt_mvp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpu_div_sqrt_mvp-9cbdbd8bba012c0a/hdl/iteration_div_sqrt_mvp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpu_div_sqrt_mvp-9cbdbd8bba012c0a/hdl/control_mvp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpu_div_sqrt_mvp-9cbdbd8bba012c0a/hdl/norm_div_sqrt_mvp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpu_div_sqrt_mvp-9cbdbd8bba012c0a/hdl/preprocess_mvp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpu_div_sqrt_mvp-9cbdbd8bba012c0a/hdl/nrbd_nrsc_mvp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpu_div_sqrt_mvp-9cbdbd8bba012c0a/hdl/div_sqrt_top_mvp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpu_div_sqrt_mvp-9cbdbd8bba012c0a/hdl/div_sqrt_mvp_wrapper.sv"
+    ],
+    "dependencies": [
+      "common_cells"
+    ],
+    "version": "1.0.4"
+  },
+  {
+    "package": "register_interface",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "register_interface": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/include"
+      ],
+      "axi": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/include"
+      ],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "common_verification": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_intf.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/vendor/lowrisc_opentitan/src/prim_subreg_arb.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/vendor/lowrisc_opentitan/src/prim_subreg_ext.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/apb_to_reg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/axi_lite_to_reg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/axi_to_reg_v2.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/periph_to_reg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_cdc.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_cut.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_demux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_err_slv.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_filter_empty_writes.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_mux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_to_apb.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_to_mem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_to_tlul.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_to_axi.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/reg_uniform.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/vendor/lowrisc_opentitan/src/prim_subreg_shadow.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/vendor/lowrisc_opentitan/src/prim_subreg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/src/deprecated/axi_to_reg.sv"
+    ],
+    "dependencies": [
+      "axi",
+      "apb",
+      "common_cells",
+      "common_verification"
+    ],
+    "version": "0.4.4"
+  },
+  {
+    "package": "udma_core",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common"
+    ],
+    "export_incdirs": {
+      "udma_core": [],
+      "tech_cells_generic": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/udma_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/udma_interfaces.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/io_clk_gen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/io_event_counter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/io_generic_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/io_shiftreg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/udma_apb_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/udma_clk_div_cnt.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/udma_ctrl.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/udma_dc_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/core/udma_arbiter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/core/udma_ch_addrgen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/io_tx_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/io_tx_fifo_dc.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/io_tx_fifo_mark.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/common/udma_clkgen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/core/udma_tx_channels.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/core/udma_stream_unit.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/core/udma_rx_channels.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_core-55b32791e708906d/rtl/core/udma_core.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic",
+      "common_cells"
+    ],
+    "version": "2.0.0"
+  },
+  {
+    "package": "fpnew",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "fpnew": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "fpu_div_sqrt_mvp": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_cast_multi.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_classifier.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/clk/rtl/gated_clk_cell.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_ctrl.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_ff1.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_pack_single.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_prepare.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_round_single.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_special.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_srt_single.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_top.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_dp.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_frbus.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_src_type.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_divsqrt_th_32.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_divsqrt_multi.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_fma.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_fma_multi.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_sdotp_multi.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_sdotp_multi_wrapper.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_noncomp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_opgroup_block.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_opgroup_fmt_slice.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_opgroup_multifmt_slice.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_rounding.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/lfsr_sr.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/fpnew-e9fe7ed2e5aad413/src/fpnew_top.sv"
+    ],
+    "dependencies": [
+      "common_cells",
+      "fpu_div_sqrt_mvp"
+    ],
+    "version": null
+  },
+  {
+    "package": "gpio",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "gpio": [],
+      "tech_cells_generic": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "common_verification": [],
+      "register_interface": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/include"
+      ],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "axi": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/hw/vendored_ips/gpio/src/gpio_reg_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/hw/vendored_ips/gpio/src/gpio_reg_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/hw/vendored_ips/gpio/src/gpio.sv",
+      "/home/renato/Desktop/training/pulpissimo/hw/vendored_ips/gpio/src/gpio_axi_lite_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/hw/vendored_ips/gpio/src/gpio_apb_wrap.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic",
+      "common_cells",
+      "common_verification",
+      "register_interface",
+      "apb",
+      "axi"
+    ],
+    "version": null
+  },
+  {
+    "package": "hwpe-ctrl",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl"
+    ],
+    "export_incdirs": {
+      "hwpe-ctrl": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl/hwpe_ctrl_interfaces.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl/hwpe_ctrl_package.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl/hwpe_ctrl_regfile_latch.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl/hwpe_ctrl_partial_mult.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl/hwpe_ctrl_seq_mult.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl/hwpe_ctrl_uloop.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl/hwpe_ctrl_regfile_latch_test_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl/hwpe_ctrl_regfile.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-ctrl-e547e392627a22fd/rtl/hwpe_ctrl_slave.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic"
+    ],
+    "version": "1.7.3"
+  },
+  {
+    "package": "hwpe-stream",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl"
+    ],
+    "export_incdirs": {
+      "hwpe-stream": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/hwpe_stream_interfaces.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/hwpe_stream_package.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/basic/hwpe_stream_assign.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/basic/hwpe_stream_buffer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/basic/hwpe_stream_demux_static.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/basic/hwpe_stream_deserialize.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/basic/hwpe_stream_fence.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/basic/hwpe_stream_merge.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/basic/hwpe_stream_mux_static.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/basic/hwpe_stream_serialize.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/basic/hwpe_stream_split.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/fifo/hwpe_stream_fifo_ctrl.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/fifo/hwpe_stream_fifo_scm.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/streamer/hwpe_stream_addressgen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/streamer/hwpe_stream_addressgen_v2.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/streamer/hwpe_stream_addressgen_v3.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/streamer/hwpe_stream_sink_realign.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/streamer/hwpe_stream_source_realign.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/streamer/hwpe_stream_strbgen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/streamer/hwpe_stream_streamer_queue.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/tcdm/hwpe_stream_tcdm_assign.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/tcdm/hwpe_stream_tcdm_mux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/tcdm/hwpe_stream_tcdm_mux_static.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/tcdm/hwpe_stream_tcdm_reorder.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/tcdm/hwpe_stream_tcdm_reorder_static.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/fifo/hwpe_stream_fifo_earlystall.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/fifo/hwpe_stream_fifo_earlystall_sidech.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/fifo/hwpe_stream_fifo_scm_test_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/fifo/hwpe_stream_fifo_sidech.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/fifo/hwpe_stream_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/tcdm/hwpe_stream_tcdm_fifo_load_sidech.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/fifo/hwpe_stream_fifo_passthrough.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/streamer/hwpe_stream_source.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/tcdm/hwpe_stream_tcdm_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/tcdm/hwpe_stream_tcdm_fifo_load.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/tcdm/hwpe_stream_tcdm_fifo_store.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-stream-1004699fca3c87e1/rtl/streamer/hwpe_stream_sink.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic"
+    ],
+    "version": "1.8.0"
+  },
+  {
+    "package": "udma_camera",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "udma_camera": [],
+      "tech_cells_generic": [],
+      "udma_core": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_camera-d729032bbd1b2a2c/rtl/cpi_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_camera-d729032bbd1b2a2c/rtl/camera_reg_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_camera-d729032bbd1b2a2c/rtl/camera_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_camera-d729032bbd1b2a2c/rtl/udma_cpi_wrap.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic",
+      "udma_core"
+    ],
+    "version": "2.0.0"
+  },
+  {
+    "package": "udma_filter",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "udma_filter": [],
+      "udma_core": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_filter-90deaaec2a52a5af/rtl/filter_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_filter-90deaaec2a52a5af/rtl/udma_filter_au.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_filter-90deaaec2a52a5af/rtl/udma_filter_bincu.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_filter-90deaaec2a52a5af/rtl/udma_filter_reg_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_filter-90deaaec2a52a5af/rtl/udma_filter_rx_dataout.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_filter-90deaaec2a52a5af/rtl/udma_filter_tx_datafetch.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_filter-90deaaec2a52a5af/rtl/udma_filter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_filter-90deaaec2a52a5af/rtl/udma_filter_wrap.sv"
+    ],
+    "dependencies": [
+      "udma_core"
+    ],
+    "version": "2.0.0"
+  },
+  {
+    "package": "udma_hyper",
+    "independent": false,
+    "target": "all(all(*, all(*)), not(hyper_macro))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src"
+    ],
+    "export_incdirs": {
+      "udma_hyper": [],
+      "udma_core": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyper_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/cdc_fifo_gray_hyper.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/graycode_hyper.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/clock_diff_out.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/clk_gen_hyper.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/onehot_to_bin_hyper.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/ddr_out.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/read_clk_rwds.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyperbus_phy.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/cmd_addr_gen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/ddr_in.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_hyper_reg_if_common.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_hyper_reg_if_mulid.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_rxbuffer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_txbuffer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_hyper_ctrl.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_hyperbus_mulid.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyper_unpack.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_cfg_outbuff.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyperbus_mux_generic.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyper_twd_trans_spliter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyper_rr_flag_req.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyper_arbiter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyper_arb_primitive.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/io_generic_fifo_hyper.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_dc_fifo_hyper.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/dc_token_ring_fifo_din_hyper.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/dc_token_ring_fifo_dout_hyper.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/dc_token_ring_hyper.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/dc_data_buffer_hyper.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/dc_full_detector_hyper.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/dc_synchronizer_hyper.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_cmd_queue.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_hyper_busy.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_hyper_busy_phy.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_hyper_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/udma_hyper_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyper_macro_bridge.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyper_macro.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_hyper-25d0d36a772cf85e/udma-hyperbus/src/hyperbus_delay_line.sv"
+    ],
+    "dependencies": [
+      "udma_core",
+      "tech_cells_generic"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "package": "udma_i2c",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2c-a768c09ae26d9daa/rtl"
+    ],
+    "export_incdirs": {
+      "udma_i2c": [],
+      "udma_core": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2c-a768c09ae26d9daa/rtl/i2c_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2c-a768c09ae26d9daa/rtl/udma_i2c_bus_ctrl.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2c-a768c09ae26d9daa/rtl/udma_i2c_reg_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2c-a768c09ae26d9daa/rtl/udma_i2c_control.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2c-a768c09ae26d9daa/rtl/udma_i2c_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2c-a768c09ae26d9daa/rtl/udma_i2c_wrap.sv"
+    ],
+    "dependencies": [
+      "udma_core"
+    ],
+    "version": "3.0.0"
+  },
+  {
+    "package": "udma_i2s",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "udma_i2s": [],
+      "udma_core": [],
+      "tech_cells_generic": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/cic_comb.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/cic_integrator.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_clk_gen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_rx_dsp_channel.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_rx_channel.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_tx_dsp_channel.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_tx_channel.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_ws_gen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_dsp_ws_gen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/udma_i2s_reg_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/cic_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_clkws_gen.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/pdm_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/i2s_txrx.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_i2s-4251a0751afa27ac/rtl/udma_i2s_top.sv"
+    ],
+    "dependencies": [
+      "udma_core",
+      "tech_cells_generic",
+      "common_cells"
+    ],
+    "version": "2.0.0"
+  },
+  {
+    "package": "udma_qspi",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_qspi-cdef62325988d740/rtl"
+    ],
+    "export_incdirs": {
+      "udma_qspi": [],
+      "udma_core": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_qspi-cdef62325988d740/rtl/qspi_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_qspi-cdef62325988d740/rtl/udma_spim_ctrl.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_qspi-cdef62325988d740/rtl/udma_spim_reg_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_qspi-cdef62325988d740/rtl/udma_spim_txrx.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_qspi-cdef62325988d740/rtl/udma_spim_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_qspi-cdef62325988d740/rtl/udma_qspi_wrap.sv"
+    ],
+    "dependencies": [
+      "udma_core",
+      "common_cells",
+      "tech_cells_generic"
+    ],
+    "version": "2.0.0"
+  },
+  {
+    "package": "udma_sdio",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "udma_sdio": [],
+      "udma_core": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_sdio-137248d661f5f240/rtl/sdio_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_sdio-137248d661f5f240/rtl/sdio_crc16.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_sdio-137248d661f5f240/rtl/sdio_crc7.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_sdio-137248d661f5f240/rtl/udma_sdio_reg_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_sdio-137248d661f5f240/rtl/sdio_txrx_cmd.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_sdio-137248d661f5f240/rtl/sdio_txrx_data.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_sdio-137248d661f5f240/rtl/sdio_txrx.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_sdio-137248d661f5f240/rtl/udma_sdio_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_sdio-137248d661f5f240/rtl/udma_sdio_wrap.sv"
+    ],
+    "dependencies": [
+      "udma_core",
+      "common_cells",
+      "tech_cells_generic"
+    ],
+    "version": "2.0.0"
+  },
+  {
+    "package": "udma_uart",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "udma_uart": [],
+      "udma_core": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_uart-2e2e90c70f13f1c0/rtl/uart_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_uart-2e2e90c70f13f1c0/rtl/udma_uart_reg_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_uart-2e2e90c70f13f1c0/rtl/udma_uart_rx.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_uart-2e2e90c70f13f1c0/rtl/udma_uart_tx.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_uart-2e2e90c70f13f1c0/rtl/udma_uart_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/udma_uart-2e2e90c70f13f1c0/rtl/udma_uart_wrap.sv"
+    ],
+    "dependencies": [
+      "udma_core",
+      "common_cells"
+    ],
+    "version": "2.0.0"
+  },
+  {
+    "package": "adv_dbg_if",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl"
+    ],
+    "export_incdirs": {
+      "adv_dbg_if": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_axi_biu.sv,",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_axi_module.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_lint_biu.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_lint_module.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_crc32.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_or1k_biu.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_or1k_module.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_or1k_status_reg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/bytefifo.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/syncflop.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/syncreg.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_tap_top.v",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adv_dbg_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_axionly_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/adv_dbg_if-1ca7cdfb84c8f5ca/rtl/adbg_lintonly_top.sv"
+    ],
+    "dependencies": [],
+    "version": "0.0.2"
+  },
+  {
+    "package": "apb2per",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "apb2per": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb2per-940361c093488815/apb2per.sv"
+    ],
+    "dependencies": [],
+    "version": "0.1.0"
+  },
+  {
+    "package": "apb_adv_timer",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl"
+    ],
+    "export_incdirs": {
+      "apb_adv_timer": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/adv_timer_apb_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/comparator.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/input_stage.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/lut_4x4.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/out_filter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/prescaler.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/timer_cntrl.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/up_down_counter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/timer_module.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_adv_timer-8bef6a5bc0cb1116/rtl/apb_adv_timer.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic"
+    ],
+    "version": "1.0.4"
+  },
+  {
+    "package": "apb_interrupt_cntrl",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "apb_interrupt_cntrl": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_interrupt_cntrl-637bd323fb264bca/apb_interrupt_cntrl.sv"
+    ],
+    "dependencies": [
+      "common_cells",
+      "apb"
+    ],
+    "version": "0.2.0"
+  },
+  {
+    "package": "cluster_interconnect",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "cluster_interconnect": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco",
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco"
+      ],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/tcdm_interconnect/tcdm_interconnect_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/tcdm_interconnect/addr_dec_resp_mux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/tcdm_interconnect/amo_shim.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/variable_latency_interconnect/addr_decoder.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/tcdm_interconnect/xbar.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/variable_latency_interconnect/simplex_xbar.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/tcdm_interconnect/clos_net.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/tcdm_interconnect/bfly_net.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/variable_latency_interconnect/full_duplex_xbar.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/tcdm_interconnect/tcdm_interconnect.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/variable_latency_interconnect/variable_latency_bfly_net.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/variable_latency_interconnect/variable_latency_interconnect.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/FanInPrimitive_Req.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/ArbitrationTree.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/MUX2_REQ.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/AddressDecoder_Resp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/TestAndSet.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/RequestBlock2CH.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/RequestBlock1CH.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/FanInPrimitive_Resp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/ResponseTree.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/ResponseBlock.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/AddressDecoder_Req.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/XBAR_TCDM.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/XBAR_TCDM_WRAPPER.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/TCDM_PIPE_REQ.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/TCDM_PIPE_RESP.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/grant_mask.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco/priority_Flag_Req.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/AddressDecoder_PE_Req.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/AddressDecoder_Resp_PE.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/ArbitrationTree_PE.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/FanInPrimitive_Req_PE.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/RR_Flag_Req_PE.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/MUX2_REQ_PE.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/FanInPrimitive_PE_Resp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/RequestBlock1CH_PE.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/RequestBlock2CH_PE.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/ResponseBlock_PE.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/ResponseTree_PE.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco/XBAR_PE.sv"
+    ],
+    "dependencies": [
+      "common_cells"
+    ],
+    "version": "1.2.1"
+  },
+  {
+    "package": "cv32e40p",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/include",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/bhv"
+    ],
+    "export_incdirs": {
+      "cv32e40p": [],
+      "fpnew": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/include/cv32e40p_apu_core_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/include/cv32e40p_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_alu.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_alu_div.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_aligner.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_compressed_decoder.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_controller.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_cs_registers.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_decoder.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_int_controller.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_ex_stage.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_hwloop_regs.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_id_stage.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_if_stage.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_load_store_unit.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_mult.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_prefetch_buffer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_prefetch_controller.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_obi_interface.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_core.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_apu_disp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_popcnt.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_ff_one.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_sleep_unit.sv"
+    ],
+    "dependencies": [
+      "fpnew",
+      "common_cells",
+      "tech_cells_generic"
+    ],
+    "version": null
+  },
+  {
+    "package": "cv32e40p",
+    "independent": false,
+    "target": "all(all(*, all(*)), all(any(cv32e40p_use_latch_regfile, all(not(fpga), not(verilator))), not(cv32e40p_use_ff_regfile)))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/include",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/bhv"
+    ],
+    "export_incdirs": {
+      "cv32e40p": [],
+      "fpnew": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cv32e40p-703290f15a6e8974/rtl/cv32e40p_register_file_latch.sv"
+    ],
+    "dependencies": [
+      "fpnew",
+      "common_cells",
+      "tech_cells_generic"
+    ],
+    "version": null
+  },
+  {
+    "package": "dummy_vip",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "dummy_vip": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/dummy_vip-d78b1fce298f4b2d/rtl/dummy_submodule.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/dummy_vip-d78b1fce298f4b2d/rtl/dummy_top.sv"
+    ],
+    "dependencies": [],
+    "version": null
+  },
+  {
+    "package": "hwpe-mac-engine",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-mac-engine-db1193857e43071d/rtl"
+    ],
+    "export_incdirs": {
+      "hwpe-mac-engine": [],
+      "hwpe-stream": [],
+      "hwpe-ctrl": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-mac-engine-db1193857e43071d/rtl/mac_package.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-mac-engine-db1193857e43071d/rtl/mac_engine.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-mac-engine-db1193857e43071d/rtl/mac_fsm.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-mac-engine-db1193857e43071d/rtl/mac_streamer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-mac-engine-db1193857e43071d/rtl/mac_ctrl.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-mac-engine-db1193857e43071d/rtl/mac_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/hwpe-mac-engine-db1193857e43071d/wrap/mac_top_wrap.sv"
+    ],
+    "dependencies": [
+      "hwpe-stream",
+      "hwpe-ctrl"
+    ],
+    "version": "1.3.3"
+  },
+  {
+    "package": "ibex",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "ibex": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_register_file_latch.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_register_file_ff.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_register_file_fpga.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic"
+    ],
+    "version": null
+  },
+  {
+    "package": "ibex",
+    "independent": false,
+    "target": "all(all(*, all(*)), not(all(any(ibex_include_tracer, test), not(ibex_exclude_tracer))))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/vendor/lowrisc_ip/ip/prim/rtl"
+    ],
+    "export_incdirs": {
+      "ibex": [],
+      "tech_cells_generic": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_alu.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_compressed_decoder.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_controller.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_counter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_csr.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_decoder.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_fetch_fifo.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_load_store_unit.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_multdiv_fast.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_multdiv_slow.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_pmp.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_wb_stage.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_cs_registers.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_ex_block.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_id_stage.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_prefetch_buffer.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_if_stage.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/ibex-3d636992cd289cea/rtl/ibex_core.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic"
+    ],
+    "version": null
+  },
+  {
+    "package": "jtag_pulp",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "jtag_pulp": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/jtag_pulp-7cfb4fb96d211479/src/bscell.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/jtag_pulp-7cfb4fb96d211479/src/jtag_axi_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/jtag_pulp-7cfb4fb96d211479/src/jtag_enable.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/jtag_pulp-7cfb4fb96d211479/src/jtag_enable_synch.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/jtag_pulp-7cfb4fb96d211479/src/jtagreg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/jtag_pulp-7cfb4fb96d211479/src/jtag_rst_synch.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/jtag_pulp-7cfb4fb96d211479/src/jtag_sync.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/jtag_pulp-7cfb4fb96d211479/src/tap_top.v"
+    ],
+    "dependencies": [],
+    "version": "0.2.0"
+  },
+  {
+    "package": "pulp_io",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "pulp_io": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_io-8557a8d559d27a25/inc"
+      ],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "gpio": [],
+      "udma_uart": [],
+      "udma_core": [],
+      "udma_i2c": [],
+      "udma_sdio": [],
+      "udma_i2s": [],
+      "udma_camera": [],
+      "udma_qspi": [],
+      "udma_filter": [],
+      "udma_hyper": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_io-8557a8d559d27a25/src/udma_cfg_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_io-8557a8d559d27a25/src/pulp_io_pkg.sv"
+    ],
+    "dependencies": [
+      "common_cells",
+      "apb",
+      "gpio",
+      "udma_uart",
+      "udma_core",
+      "udma_i2c",
+      "udma_sdio",
+      "udma_i2s",
+      "udma_camera",
+      "udma_qspi",
+      "udma_filter",
+      "udma_hyper"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "package": "pulp_io",
+    "independent": false,
+    "target": "all(all(*, all(*)), not(hyper_external))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "pulp_io": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_io-8557a8d559d27a25/inc"
+      ],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "gpio": [],
+      "udma_uart": [],
+      "udma_core": [],
+      "udma_i2c": [],
+      "udma_sdio": [],
+      "udma_i2s": [],
+      "udma_camera": [],
+      "udma_qspi": [],
+      "udma_filter": [],
+      "udma_hyper": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_io-8557a8d559d27a25/src/udma_subsystem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_io-8557a8d559d27a25/src/pulp_io.sv"
+    ],
+    "dependencies": [
+      "common_cells",
+      "apb",
+      "gpio",
+      "udma_uart",
+      "udma_core",
+      "udma_i2c",
+      "udma_sdio",
+      "udma_i2s",
+      "udma_camera",
+      "udma_qspi",
+      "udma_filter",
+      "udma_hyper"
+    ],
+    "version": "0.1.0"
+  },
+  {
+    "package": "riscv-dbg",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "riscv-dbg": [],
+      "tech_cells_generic": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/src/dm_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/debug_rom/debug_rom.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/debug_rom/debug_rom_one_scratch.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/src/dm_csrs.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/src/dm_mem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/src/dmi_cdc.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic",
+      "common_cells"
+    ],
+    "version": "0.5.1"
+  },
+  {
+    "package": "riscv-dbg",
+    "independent": false,
+    "target": "all(all(*, all(*)), not(all(bscane, xilinx)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "riscv-dbg": [],
+      "tech_cells_generic": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/src/dmi_jtag_tap.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic",
+      "common_cells"
+    ],
+    "version": "0.5.1"
+  },
+  {
+    "package": "riscv-dbg",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "riscv-dbg": [],
+      "tech_cells_generic": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/src/dm_sba.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/src/dm_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/src/dmi_jtag.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/riscv-dbg-d2fb88e48333d018/src/dm_obi_top.sv"
+    ],
+    "dependencies": [
+      "tech_cells_generic",
+      "common_cells"
+    ],
+    "version": "0.5.1"
+  },
+  {
+    "package": "scm",
+    "independent": false,
+    "target": "all(all(*, all(*)), all(any(scm_use_latch_scm, all(not(fpga), not(verilator))), not(scm_use_fpga_scm)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "scm": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1r_1w_test_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1w_64b_multi_port_read_32b_1row.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1w_multi_port_read_1row.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1r_1w_all.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1r_1w_all_test_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1r_1w_be.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1r_1w.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1r_1w_1row.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1w_128b_multi_port_read_32b.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1w_64b_multi_port_read_32b.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1w_64b_1r_32b.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1w_multi_port_read_be.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_1w_multi_port_read.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_2r_1w_asymm.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_2r_1w_asymm_test_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_2r_2w.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_3r_2w.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_3r_2w_be.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_multi_way_1w_64b_multi_port_read_32b.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/scm-9623ebf65a54c95c/latch_scm/register_file_multi_way_1w_multi_port_read.sv"
+    ],
+    "dependencies": [],
+    "version": "1.1.1"
+  },
+  {
+    "package": "timer_unit",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "timer_unit": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/timer_unit-528778978ca83d40/rtl/timer_unit_counter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/timer_unit-528778978ca83d40/rtl/timer_unit_counter_presc.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/timer_unit-528778978ca83d40/rtl/apb_timer_unit.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/timer_unit-528778978ca83d40/rtl/timer_unit.sv"
+    ],
+    "dependencies": [],
+    "version": "1.0.3"
+  },
+  {
+    "package": "apb_fll_if",
+    "independent": false,
+    "target": "all(*, all(*))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "apb_fll_if": [],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ]
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_fll_if-836c625eb108998a/src/fll_intf.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_fll_if-836c625eb108998a/src/apb_fll_if.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb_fll_if-836c625eb108998a/src/apb_to_fll.sv"
+    ],
+    "dependencies": [
+      "apb"
+    ],
+    "version": "0.2.1"
+  },
+  {
+    "package": "generic_fll",
+    "independent": false,
+    "target": "all(all(*, all(*)), not(synthesis))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "generic_fll": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/model/gf22_DCO_model.tc.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/model/gf22_FLL_model.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLLPkg.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_clk_divider.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_clk_period_quantizer.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_clock_gated.rtl.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_digital.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_dither_pattern_gen.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_glitchfree_clkdiv.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_glitchfree_clkmux.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_mux.rtl.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_loop_filter.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_reg.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_settling_monitor.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_synchroedge.vhd",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/generic_fll-152d002b2e8b7e91/fe/rtl/FLL_zerodelta.vhd"
+    ],
+    "dependencies": [],
+    "version": "0.2.0"
+  },
+  {
+    "package": "pulp_soc",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/include"
+    ],
+    "export_incdirs": {
+      "pulp_soc": [],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "adv_dbg_if": [],
+      "apb2per": [],
+      "apb_adv_timer": [],
+      "apb_interrupt_cntrl": [],
+      "axi": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/include"
+      ],
+      "timer_unit": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "cluster_interconnect": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco",
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco"
+      ],
+      "fpnew": [],
+      "jtag_pulp": [],
+      "cv32e40p": [],
+      "ibex": [],
+      "scm": [],
+      "tech_cells_generic": [],
+      "pulp_io": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_io-8557a8d559d27a25/inc"
+      ],
+      "hwpe-mac-engine": [],
+      "riscv-dbg": [],
+      "register_interface": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/include"
+      ],
+      "dummy_vip": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/pkg_soc_interconnect.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/contiguous_crossbar.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/interleaved_crossbar.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/tcdm_demux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/boot_rom.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/l2_ram_multi_bank.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/lint_jtag_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/soc_event_arbiter.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/soc_event_generator.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/soc_event_queue.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/tcdm_error_slave.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/soc_interconnect.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/soc_interconnect_wrap.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/soc_ctrl_reg/src/soc_ctrl_reg_pkg.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/soc_ctrl_reg/src/soc_ctrl_reg_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/soc_peripherals.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/jtag_tap_top.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/pulp_soc/pulp_soc.sv"
+    ],
+    "dependencies": [
+      "apb",
+      "adv_dbg_if",
+      "apb2per",
+      "apb_adv_timer",
+      "apb_interrupt_cntrl",
+      "axi",
+      "timer_unit",
+      "common_cells",
+      "cluster_interconnect",
+      "fpnew",
+      "jtag_pulp",
+      "cv32e40p",
+      "ibex",
+      "scm",
+      "tech_cells_generic",
+      "pulp_io",
+      "hwpe-mac-engine",
+      "riscv-dbg",
+      "register_interface",
+      "dummy_vip"
+    ],
+    "version": null
+  },
+  {
+    "package": "pulp_soc",
+    "independent": false,
+    "target": "all(all(*, all(*)), not(rtl))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "pulp_soc": [],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "adv_dbg_if": [],
+      "apb2per": [],
+      "apb_adv_timer": [],
+      "apb_interrupt_cntrl": [],
+      "axi": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/include"
+      ],
+      "timer_unit": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "cluster_interconnect": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco",
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco"
+      ],
+      "fpnew": [],
+      "jtag_pulp": [],
+      "cv32e40p": [],
+      "ibex": [],
+      "scm": [],
+      "tech_cells_generic": [],
+      "pulp_io": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_io-8557a8d559d27a25/inc"
+      ],
+      "hwpe-mac-engine": [],
+      "riscv-dbg": [],
+      "register_interface": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/include"
+      ],
+      "dummy_vip": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/fc/fc_demux.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/fc/fc_subsystem.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/fc/fc_hwpe.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/fc/cv32e40p_fp_wrapper.sv"
+    ],
+    "dependencies": [
+      "apb",
+      "adv_dbg_if",
+      "apb2per",
+      "apb_adv_timer",
+      "apb_interrupt_cntrl",
+      "axi",
+      "timer_unit",
+      "common_cells",
+      "cluster_interconnect",
+      "fpnew",
+      "jtag_pulp",
+      "cv32e40p",
+      "ibex",
+      "scm",
+      "tech_cells_generic",
+      "pulp_io",
+      "hwpe-mac-engine",
+      "riscv-dbg",
+      "register_interface",
+      "dummy_vip"
+    ],
+    "version": null
+  },
+  {
+    "package": "pulp_soc",
+    "independent": false,
+    "target": "all(*, all(*, all(*)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "pulp_soc": [],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "adv_dbg_if": [],
+      "apb2per": [],
+      "apb_adv_timer": [],
+      "apb_interrupt_cntrl": [],
+      "axi": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/axi-e89d8332adabf5a9/include"
+      ],
+      "timer_unit": [],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "cluster_interconnect": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/low_latency_interco",
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/cluster_interconnect-37d6a544ba76227f/rtl/peripheral_interco"
+      ],
+      "fpnew": [],
+      "jtag_pulp": [],
+      "cv32e40p": [],
+      "ibex": [],
+      "scm": [],
+      "tech_cells_generic": [],
+      "pulp_io": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_io-8557a8d559d27a25/inc"
+      ],
+      "hwpe-mac-engine": [],
+      "riscv-dbg": [],
+      "register_interface": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/include"
+      ],
+      "dummy_vip": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/components/pulp_interfaces.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/components/tcdm_arbiter_2x1.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/pulp_soc-e063255b8082f1cc/rtl/components/obi_pulp_adapter.sv"
+    ],
+    "dependencies": [
+      "apb",
+      "adv_dbg_if",
+      "apb2per",
+      "apb_adv_timer",
+      "apb_interrupt_cntrl",
+      "axi",
+      "timer_unit",
+      "common_cells",
+      "cluster_interconnect",
+      "fpnew",
+      "jtag_pulp",
+      "cv32e40p",
+      "ibex",
+      "scm",
+      "tech_cells_generic",
+      "pulp_io",
+      "hwpe-mac-engine",
+      "riscv-dbg",
+      "register_interface",
+      "dummy_vip"
+    ],
+    "version": null
+  },
+  {
+    "package": "tbtools",
+    "independent": false,
+    "target": "all(all(*, all(*)), not(synthesis))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "tbtools": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tbtools-80a87f0efbc8bcd7/dpi_models/dpi_models.sv",
+      "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/tbtools-80a87f0efbc8bcd7/tb_driver/tb_driver.sv"
+    ],
+    "dependencies": [],
+    "version": "0.2.1"
+  },
+  {
+    "package": "pulpissimo",
+    "independent": false,
+    "target": "all(all(*), not(any(fpga, xilinx)))",
+    "include_dirs": [],
+    "export_incdirs": {
+      "pulpissimo": [
+        "/home/renato/Desktop/training/pulpissimo/hw/includes"
+      ],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "jtag_pulp": [],
+      "pulp_soc": [],
+      "tbtools": [],
+      "tech_cells_generic": [],
+      "pulpissimo_padframe_rtl_sim": [
+        "/home/renato/Desktop/training/pulpissimo/hw/padframe/pulpissimo_padframe_rtl_sim_autogen/include"
+      ],
+      "pulpissimo_padframe_fpga": [
+        "/home/renato/Desktop/training/pulpissimo/hw/padframe/pulpissimo_padframe_fpga_autogen/include"
+      ],
+      "register_interface": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/include"
+      ],
+      "generic_fll": [],
+      "apb_fll_if": [],
+      "pulpissimo_optional_vips": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/hw/asic_autogen_rom.sv"
+    ],
+    "dependencies": [
+      "common_cells",
+      "apb",
+      "jtag_pulp",
+      "pulp_soc",
+      "tbtools",
+      "tech_cells_generic",
+      "pulpissimo_padframe_rtl_sim",
+      "pulpissimo_padframe_fpga",
+      "register_interface",
+      "generic_fll",
+      "apb_fll_if",
+      "pulpissimo_optional_vips"
+    ],
+    "version": null
+  },
+  {
+    "package": "pulpissimo",
+    "independent": false,
+    "target": "all(*)",
+    "include_dirs": [],
+    "export_incdirs": {
+      "pulpissimo": [
+        "/home/renato/Desktop/training/pulpissimo/hw/includes"
+      ],
+      "common_cells": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/common_cells-bdd3ba741800de55/include"
+      ],
+      "apb": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/apb-e376e45e644c1b22/include"
+      ],
+      "jtag_pulp": [],
+      "pulp_soc": [],
+      "tbtools": [],
+      "tech_cells_generic": [],
+      "pulpissimo_padframe_rtl_sim": [
+        "/home/renato/Desktop/training/pulpissimo/hw/padframe/pulpissimo_padframe_rtl_sim_autogen/include"
+      ],
+      "pulpissimo_padframe_fpga": [
+        "/home/renato/Desktop/training/pulpissimo/hw/padframe/pulpissimo_padframe_fpga_autogen/include"
+      ],
+      "register_interface": [
+        "/home/renato/Desktop/training/pulpissimo/.bender/git/checkouts/register_interface-d81701e89d22e79e/include"
+      ],
+      "generic_fll": [],
+      "apb_fll_if": [],
+      "pulpissimo_optional_vips": []
+    },
+    "defines": {},
+    "files": [
+      "/home/renato/Desktop/training/pulpissimo/hw/soc_domain.sv",
+      "/home/renato/Desktop/training/pulpissimo/hw/pulpissimo.sv"
+    ],
+    "dependencies": [
+      "common_cells",
+      "apb",
+      "jtag_pulp",
+      "pulp_soc",
+      "tbtools",
+      "tech_cells_generic",
+      "pulpissimo_padframe_rtl_sim",
+      "pulpissimo_padframe_fpga",
+      "register_interface",
+      "generic_fll",
+      "apb_fll_if",
+      "pulpissimo_optional_vips"
+    ],
+    "version": null
+  }
+]

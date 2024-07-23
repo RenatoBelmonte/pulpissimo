@@ -57,8 +57,8 @@ packages:
     dependencies:
     - common_cells
   common_cells:
-    revision: 0d67563b6b592549542544f1abc0f43e5d4ee8b4
-    version: 1.35.0
+    revision: c27bce39ebb2e6bae52f60960814a2afca7bd4cb
+    version: 1.37.0
     source:
       Git: https://github.com/pulp-platform/common_cells.git
     dependencies:
@@ -79,6 +79,13 @@ packages:
     - common_cells
     - fpnew
     - tech_cells_generic
+  dummy_vip:
+    revision: ddb1729d154987bf95112d90f2d94985c3115c13
+    version: null
+    source:
+      Git: https://github.com/RenatoBelmonte/dummy_vip.git
+    dependencies:
+    - common_cells
   fpnew:
     revision: a8e0cba6dd50f357ece73c2c955d96efc3c6c315
     version: null
@@ -166,10 +173,10 @@ packages:
     - udma_sdio
     - udma_uart
   pulp_soc:
-    revision: bf65372aab4edd404160170e2a4d2c63b27ab5f2
-    version: 5.0.1
+    revision: 002b272a554ac20a8964e97c4cb040c635b8225a
+    version: null
     source:
-      Git: https://github.com/pulp-platform/pulp_soc.git
+      Git: https://github.com/RenatoBelmonte/pulp_soc.git
     dependencies:
     - adv_dbg_if
     - apb
@@ -180,6 +187,7 @@ packages:
     - cluster_interconnect
     - common_cells
     - cv32e40p
+    - dummy_vip
     - fpnew
     - hwpe-mac-engine
     - ibex
@@ -190,6 +198,7 @@ packages:
     - scm
     - tech_cells_generic
     - timer_unit
+    - wide_alu
   pulpissimo_optional_vips:
     revision: null
     version: null
@@ -328,3 +337,11 @@ packages:
     dependencies:
     - common_cells
     - udma_core
+  wide_alu:
+    revision: d345ad40c7dcc3d9278a042eb7281c6396777428
+    version: null
+    source:
+      Git: https://github.com/RenatoBelmonte/myIP
+    dependencies:
+    - axi
+    - register_interface

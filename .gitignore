@@ -1,4 +1,6 @@
 modelsim.ini
+sw/
+time.txt
 xcelium.d/
 xrun.history
 xrun.log
@@ -10,3 +12,5 @@ working_dir/
 /utils/bin/padrick
 /Bender.local
 /build
+*.log
+*.jou
