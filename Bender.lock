@@ -177,7 +177,7 @@ packages:
     version: null
     source:
       Git: https://github.com/RenatoBelmonte/pulp_soc.git
-    dependencies:
+   dependencies:
     - adv_dbg_if
     - apb
     - apb2per
