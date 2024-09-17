@@ -41,6 +41,10 @@
 `define SOC_MEM_MAP_WIDE_ALU_START_ADDR      32'h1A40_0000
 `define SOC_MEM_MAP_WIDE_ALU_END_ADDR        32'h1A40_1000
 
+//SPIKER
+`define SOC_MEM_MAP_SPIKER_START_ADDR        32'h1A40_1000
+`define SOC_MEM_MAP_SPIKER_END_ADDR          32'h1A40_2000
+
 // Peripheral Bus Address Space
 `define SOC_MEM_MAP_GPIO_START_ADDR                    32'h1A10_1000
 `define SOC_MEM_MAP_GPIO_END_ADDR                      32'h1A10_2000
