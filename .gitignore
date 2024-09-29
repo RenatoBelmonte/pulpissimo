@@ -14,3 +14,4 @@ working_dir/
 /build
 *.log
 *.jou
+.DS_Store
