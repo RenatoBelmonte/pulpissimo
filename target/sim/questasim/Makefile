@@ -21,7 +21,7 @@ include $(PULPISSIMO_ROOT)/utils/utils.mk
 ## Configuration Variables for Bender, Questasim behavior
 BENDER_SCRIPTS_ARGS += -t rtl -t test -t rtl_sim
 BENDER_VIP_SCRIPT_ARGS ?= -t rt_dpi -t i2c_vip -t flash_vip -t i2s_vip -t use_vips
-VSIM_ARGS ?= -2008
+VSIM_ARGS ?= -64
 VLOG_ARGS += -suppress 2583 -suppress 13314 \"+incdir+\$$ROOT/hw/includes\"
 VCOM_ARGS += ""
 VOPT_ARGS ?= +acc
@@ -111,7 +111,7 @@ clean_questasim:
 $(QUESTA_BUILD_DIR)/compile.tcl: $(PULPISSIMO_ROOT)/Bender.lock | $(PULPISSIMO_UTILS)/bender
 	mkdir -p $(QUESTA_BUILD_DIR)
 	echo 'set ROOT [file normalize [file dirname [info script]]/../..]' > $@
-	$(PULPISSIMO_UTILS)/bender script vsim $(BENDER_SCRIPTS_ARGS) --vlog-arg="$(VLOG_ARGS)" --vcom-arg="" | grep -v "set ROOT" >> $@
+	$(PULPISSIMO_UTILS)/bender script vsim $(BENDER_SCRIPTS_ARGS) --vlog-arg="$(VLOG_ARGS)" --vcom-arg="-2008" | grep -v "set ROOT" >> $@
 
 .PHONY: $(QUESTA_BUILD_DIR)/compile_vip.tcl
 $(QUESTA_BUILD_DIR)/compile_vip.tcl: $(PULPISSIMO_ROOT)/Bender.lock | $(PULPISSIMO_UTILS)/bender
