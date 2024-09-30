@@ -111,7 +111,7 @@ clean_questasim:
 $(QUESTA_BUILD_DIR)/compile.tcl: $(PULPISSIMO_ROOT)/Bender.lock | $(PULPISSIMO_UTILS)/bender
 	mkdir -p $(QUESTA_BUILD_DIR)
 	echo 'set ROOT [file normalize [file dirname [info script]]/../..]' > $@
-	$(PULPISSIMO_UTILS)/bender script vsim $(BENDER_SCRIPTS_ARGS) --vlog-arg="$(VLOG_ARGS)" --vcom-arg="-2008" | grep -v "set ROOT" >> $@
+	$(PULPISSIMO_UTILS)/bender script vsim $(BENDER_SCRIPTS_ARGS) --vlog-arg="$(VLOG_ARGS)" --vcom-arg="" | grep -v "set ROOT" >> $@
 
 .PHONY: $(QUESTA_BUILD_DIR)/compile_vip.tcl
 $(QUESTA_BUILD_DIR)/compile_vip.tcl: $(PULPISSIMO_ROOT)/Bender.lock | $(PULPISSIMO_UTILS)/bender
